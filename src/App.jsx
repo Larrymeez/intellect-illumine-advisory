@@ -73,7 +73,6 @@ function Brand({ footer = false }) {
         <span>I</span>
         <span>I</span>
       </span>
-
       <span className="brand-copy">
         <strong>INTELLECT ILLUMINE</strong>
         <small>ADVISORY</small>
@@ -146,8 +145,14 @@ function InsightVisual() {
         Insight for informed decisions
       </div>
 
-      <div className="visual-orbit visual-orbit-one" aria-hidden="true" />
-      <div className="visual-orbit visual-orbit-two" aria-hidden="true" />
+      <div
+        className="visual-orbit visual-orbit-one"
+        aria-hidden="true"
+      />
+      <div
+        className="visual-orbit visual-orbit-two"
+        aria-hidden="true"
+      />
 
       <span className="visual-side-label" aria-hidden="true">
         CLARITY / DIRECTION / CONFIDENCE
@@ -203,7 +208,11 @@ function App() {
             <a href="#approach" onClick={closeMenu}>
               Our approach
             </a>
-            <a className="nav-cta" href="#contact" onClick={closeMenu}>
+            <a
+              className="nav-cta"
+              href="#contact"
+              onClick={closeMenu}
+            >
               Let's talk <ArrowUpRight />
             </a>
           </nav>
@@ -211,12 +220,13 @@ function App() {
       </header>
 
       <main>
+        {/* HERO */}
         <section className="hero">
           <div className="container hero-grid">
             <div className="hero-copy">
               <div className="eyebrow">
                 <span className="eyebrow-line" />
-                FINANCIAL CLARITY. STRATEGIC PERSPECTIVE.
+                FINANCIAL CLARITY. CONFIDENT BUSINESS GROWTH.
               </div>
 
               <p className="hero-overline">
@@ -224,24 +234,24 @@ function App() {
               </p>
 
               <h1>
-                Numbers tell a story.
+                Clarity in your numbers.
                 <br />
-                <span>Know what they</span>
+                <span>Confidence in</span>
                 <br />
-                mean for you.
+                your future.
               </h1>
 
               <p className="hero-description">
-                Accounting, audit, tax compliance, and business advisory—connected
-                by one purpose: helping you see your financial position more
-                clearly and make your next move with confidence.
+                Accounting, audit, tax compliance, and business advisory
+                solutions designed to help SMEs manage their financial
+                responsibilities, make informed decisions, and build
+                sustainable businesses.
               </p>
 
               <div className="hero-actions">
                 <a className="button button-gold" href="#contact">
                   Discuss your business <ArrowUpRight />
                 </a>
-
                 <a className="text-link" href="#services">
                   Explore our services <span aria-hidden="true">→</span>
                 </a>
@@ -263,7 +273,7 @@ function App() {
               <div className="focus-list">
                 <span>Accounting</span>
                 <i>/</i>
-                <span>Audit &amp; assurance</span>
+                <span>Audit & assurance</span>
                 <i>/</i>
                 <span>Tax compliance</span>
                 <i>/</i>
@@ -275,6 +285,7 @@ function App() {
           </div>
         </section>
 
+        {/* ABOUT */}
         <section className="section about-section" id="about">
           <div className="container">
             <div className="about-grid">
@@ -291,17 +302,17 @@ function App() {
 
               <div className="about-copy">
                 <p className="lead-copy">
-                  Your numbers should do more than record the past. They should
-                  help you understand the present and think more clearly about
-                  what comes next.
+                  Growing a business takes more than ambition. It takes a
+                  clear understanding of your finances, your obligations,
+                  and the decisions that shape your future.
                 </p>
 
                 <p>
-                  Intellect Illumine Advisory is positioned to support
-                  businesses with financial responsibilities, reporting,
-                  compliance, and decision-making. We bring the detail into
-                  focus—connecting the immediate requirements with the bigger
-                  picture of running a business.
+                  Intellect Illumine Advisory supports small and medium-sized
+                  enterprises with financial reporting, compliance, and
+                  business-focused guidance. By connecting the numbers to
+                  the bigger picture, we aim to help business owners approach
+                  their responsibilities with greater clarity and confidence.
                 </p>
 
                 <a className="underlined-link" href="#contact">
@@ -339,6 +350,7 @@ function App() {
           </div>
         </section>
 
+        {/* SERVICES */}
         <section className="section services-section" id="services">
           <div className="container">
             <div className="section-heading-row">
@@ -354,8 +366,9 @@ function App() {
               </div>
 
               <p className="section-side-copy">
-                Essential financial services, considered together and shaped
-                around your business context and objectives.
+                Practical financial support for SMEs navigating day-to-day
+                responsibilities, regulatory requirements, and the decisions
+                that come with running and growing a business.
               </p>
             </div>
 
@@ -374,19 +387,21 @@ function App() {
                   <div className="service-detail">{service.detail}</div>
 
                   <a className="service-link" href="#contact">
-                    Discuss this service <span aria-hidden="true">→</span>
+                    Discuss this service{" "}
+                    <span aria-hidden="true">→</span>
                   </a>
                 </article>
               ))}
             </div>
 
             <p className="services-note">
-              Service scope and availability can be confirmed during an initial
-              conversation.
+              Service scope and availability can be confirmed during an
+              initial conversation.
             </p>
           </div>
         </section>
 
+        {/* APPROACH */}
         <section className="approach-section" id="approach">
           <div className="container approach-grid">
             <div className="approach-intro">
@@ -402,8 +417,9 @@ function App() {
 
               <p>
                 Every business has its own pressures and priorities. Our
-                approach starts with understanding the context before focusing
-                on the numbers, the requirements, and the next decision.
+                approach starts with understanding the context before
+                focusing on the numbers, the requirements, and the next
+                decision.
               </p>
 
               <a className="button button-outline" href="#contact">
@@ -435,6 +451,7 @@ function App() {
           </div>
         </section>
 
+        {/* CONTACT */}
         <section className="contact-section" id="contact">
           <div className="container contact-grid">
             <div className="contact-copy">
@@ -448,9 +465,9 @@ function App() {
               </h2>
 
               <p>
-                Tell us a little about the support you're looking for. We can
-                start with your priorities and explore the most useful next
-                step.
+                Whether you are managing day-to-day financial responsibilities
+                or planning your business's next stage of growth, let's start
+                with a conversation about what your business needs.
               </p>
 
               <div className="contact-detail">
@@ -475,11 +492,12 @@ function App() {
                 YOUR BUSINESS, IN FOCUS
               </span>
 
-              <h3>What would you like clarity on?</h3>
+              <h3>Let's talk about your business.</h3>
 
               <p>
-                Choose the easiest way to get in touch and tell us what you
-                have in mind.
+                Tell us what you are working towards and where you need
+                financial or business support. We can explore the next
+                steps together.
               </p>
 
               <a
@@ -498,14 +516,15 @@ function App() {
         </section>
       </main>
 
+      {/* FOOTER */}
       <footer className="site-footer">
         <div className="container footer-main">
           <Brand footer />
 
           <p>
-            Clarity in numbers.
+            Clear financial insight.
             <br />
-            Confidence in decisions.
+            Confidence to grow.
           </p>
 
           <a className="footer-back-top" href="#home">
